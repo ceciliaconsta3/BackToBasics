@@ -1,5 +1,12 @@
 ## NOTES
 
+- [ ] Learn about Closures
+- [ ] Review prototypal inheritance
+
+[Practice Futurama RESTful API](https://sampleapis.com/futurama/)
+
+[Intersection Observer: Track Elements Scrolling Into View](https://webdesign.tutsplus.com/tutorials/how-to-intersection-observer--cms-30250)
+
 _Search Advance Topics in README.md_
 
 _Truthy vs falsy statements = practice syntax_
@@ -7,6 +14,11 @@ _Truthy vs falsy statements = practice syntax_
 _Unicode capitals come before lowers_
 
 _Note: cache static element lookups_
+
+*Code Palm beach open source projects*
+
+
+* The reduce() method reduces the array to a single value.
 
 * Coercion way to change entity to another datatype (e.g ```console.log("5" + 15) = "515"```)
 

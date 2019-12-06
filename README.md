@@ -1652,6 +1652,29 @@ btn.addEventListener('mouseenter', function(e) {
 
 ## Advanced Topics
 
+### Closures
+
+JavaScript treats functions just like data, which mean you can define an inner function within an outer function and return it. When you do so the inner function gets access to variables from the outer function, even after that function has returned. This is a confusing topic, I can't cover it fully here!
+
+
+Below, the inner function can access salesTaxRate, even though that variable is undefined out side of the withSalesTax function. Like I said, a topic to be explored further. 
+
+```JavaScript
+function withSalesTax(salesTaxRate) {
+    return function (price) {
+        return price * salesTaxRate;
+    }
+}
+
+var withStandardTax = withSalesTax(1.2)
+var withLowerTax = withSalesTax(1.1);
+
+salesTaxRate; // undefined
+withStandardTax(10); // 12
+withLowerTax(10); // 11
+```
+
+
 ### JSON
 
 JSON stands for **JavaScript Object Notation**.
